@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+}
+
+body {
+  overflow: visible;
+  background: #313440 no-repeat center center fixed;
+  font-family: "Futura", sans-serif;
+  background-size: cover;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-card {
+  background: gold;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 2;
+  overflow: hidden;
+  opacity: 0;
+  //margin-top: 70px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19), moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045), moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.profile-card header {
+  //border: orangered 1px dashed;
+  color: #313440;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-animation: moveIn 1s 3.1s ease forwards;
+  animation: moveIn 1s 3.1s ease forwards;
+}
+
+@media all and (min-width: 812px) {
+  .profile-card header h1 {
+    //border: blueviolet 1px solid;
+    line-height: 1;
+    padding: 5% 0 0 7%;
+    font-size: 3.6em;
+  }
+  .profile-card header h2 {
+    margin-top: -45px;
+    font-size: 1.45em;
+    font-weight: lighter;
+    padding-left: 7%;
+  }
+  @-webkit-keyframes materia {
+    0% {
+      background: $card-color;
+    }
+    50% {
+      -webkit-border-radius: 4px;
+    }
+    100% {
+      width: 400px;
+      height: 400px;
+      -webkit-border-radius: 2px;
+    }
+  }
+}
+
+// Dot Bounce Motion
+// Show the Dot: init opacity from 0 => 1
+@-webkit-keyframes init {
+0% {
+   width: 0;
+   height: 0;
+ }
+100% {
+     width: 10px;
+     height: 10px;
+     margin-top: 0;
+     opacity: 1;
+   }
+}
+@keyframes init {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 10px;
+    height: 10px;
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+// Moving Down: moveDown
+@-webkit-keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+// Moving Up: moveUp
+@-webkit-keyframes moveUp {
+  0% {
+    top: 100%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    top: 100%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+// Text Motion
+@-webkit-keyframes moveIn {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: -20px;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: -20px;
+  }
+}
