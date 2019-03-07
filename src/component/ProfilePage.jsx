@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class ProfilePage extends Component {
     render() {
         return (
-            <div>
+            <div className="body">
                 <aside className="profile-card">
                     <header>
                         <h1>NIZAR SARIELDIN</h1>
@@ -14,42 +13,37 @@ class ProfilePage extends Component {
 
                     <ul className="profile-social-links">
                         <li>
-                            <Link className="link" to="" target="_blank"
+                            <a className="link"
                                   href="https://github.com/NzrSrd">
-                                <FontAwesomeIcon className="icon"
+                                <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fab', 'github']}
-                                                 size={"2x"}
                                                  color={"#313440"}/>
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link className="link" to="/">
-                                <FontAwesomeIcon className="icon"
+                            <a className="link"
+                               href="https://www.linkedin.com/in/nizar-sarieldin-4937bb10/">
+                                <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fab', 'linkedin']}
-                                                 size={"2x"}
                                                  color={"#313440"}/>
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link className="link" to="/" target="_blank">
-                                <FontAwesomeIcon className="icon"
+                            <a className="link"
+                               href="mailto:nizar.sarieldin@gmail.com">
+                                <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fas', 'at']}
-                                                 size={"2x"}
                                                  color={"#313440"}/>
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link className="link" to="/" target="_blank" href="https://github.com/NzrSrd">
-                                <FontAwesomeIcon className="icon"
+                            <a className="link"
+                                  href="https://goo.gl/maps/Nxr9ncWz8Np">
+                                <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fas', 'map-marker-alt']}
-                                                 size={"2x"}
                                                  color={"#313440"}/>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="link" to="/" target="_blank" href="#">
                                 <p>Berlin</p>
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </aside>

@@ -1,66 +1,7 @@
-
-
-//Mobile Vertical
 $bg-color: #313440 ;
 $card-color: #FFD700;
 
-//Galaxy ((Note 3, 2), S3, S5),
-// Pixel(2, 2XL),
-// iPhone(6, 6+,7, 7+,8, 8+, X)
-@media all and (max-width: 440px) {
 
-  .profile-card header h1 {
-    padding: 5% 0 0 7%;
-    font-size: 2.4em;
-  }
-
-  .profile-card header h2 {
-    margin-top: -35px;
-    font-size: 0.98em;
-    font-weight: lighter;
-    padding-left: 7%;
-
-  }
-  @-webkit-keyframes materia {
-    0% {
-      background: $card-color;
-    }
-    50% {
-      -webkit-border-radius: 4px;
-    }
-    100% {
-      width: 310px;
-      height: 300px;
-      -webkit-border-radius: 2px;
-    }
-  }
-}
-//iPhone 4/5/SE
-@media screen and (max-width: 320px) {
-  .profile-card header h1 {
-    font-size: 1.83em;
-  }
-
-  .profile-card header h2 {
-    margin-top: -28px;
-    font-size: 0.75em;
-
-  }
-  @-webkit-keyframes materia {
-    0% {
-      background: $card-color;
-    }
-    50% {
-      -webkit-border-radius: 2px;
-    }
-    100% {
-      width: 210px;
-      height: 220px;
-      -webkit-border-radius: 2px;
-    }
-  }
-}
-//  Maximum width
 @media screen and (max-width: 319px) {
   .profile-card header h1, h2{
     opacity: 0;
@@ -81,11 +22,26 @@ $card-color: #FFD700;
   }
 
   .profile-card header h2 {
+    //background: blueviolet;
     margin-top: -22px;
     font-size: 0.77em;
     font-weight: lighter;
     padding-left: 7%;
   }
+
+  //.profile-social-links {
+  //  background: white;
+  //}
+  //
+  //.profile-social-links li a .fa-2x {
+  //  font-size: 20px;
+  //  padding-top: 5px;
+  //}
+  //
+  //.profile-social-links li p {
+  //  font-size: 20px;
+  //}
+
   @-webkit-keyframes materia {
     0% {
       background: $card-color;
@@ -94,14 +50,28 @@ $card-color: #FFD700;
       -webkit-border-radius: 2px;
     }
     100% {
-      width: 210px;
-      height: 220px;
+      width: 240px;
+      height: 240px;
       -webkit-border-radius: 2px;
     }
   }
 }
 
+//iPhone 5/SE/6/7/8 Horizontal View
 @media all and (max-height: 411px) {
+  .profile-social-links {
+    background: white;
+
+  }
+
+  .profile-social-links li a .fa-2x {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+  .profile-social-links li p {
+    display: none;
+  }
+
   @-webkit-keyframes materia {
     0% {
       background: $card-color;
@@ -110,7 +80,6 @@ $card-color: #FFD700;
       -webkit-border-radius: 2px;
     }
     100% {
-      //background: red;
       width: 240px;
       height: 240px;
       -webkit-border-radius: 2px;
