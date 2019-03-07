@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import '../sass/style.scss';
-
-import App from './App'
-import ProfilePage from "./ProfilePage";
+import App from './App';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -28,14 +26,13 @@ library.add(
     faCheckSquare
 );
 
-
 class Router extends Component {
     render() {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={App}/>
-                    <Route path="/profile-page" component={ProfilePage}/>
+                    <Route exact path="/"
+                           component={App}/>
                 </Switch>
             </BrowserRouter>
         );

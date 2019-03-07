@@ -24,7 +24,7 @@ class ProfilePage extends Component {
                             <a className="link"
                                href="https://www.linkedin.com/in/nizar-sarieldin-4937bb10/">
                                 <FontAwesomeIcon className="icon fa-2x"
-                                                 icon={['fab', 'linkedin']}
+                                                 icon={['fab', 'linkedin-in']}
                                                  color={"#313440"}/>
                             </a>
                         </li>
@@ -36,13 +36,13 @@ class ProfilePage extends Component {
                                                  color={"#313440"}/>
                             </a>
                         </li>
-                        <li>
+                        <li className="location">
                             <a className="link"
                                   href="https://goo.gl/maps/Nxr9ncWz8Np">
                                 <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fas', 'map-marker-alt']}
                                                  color={"#313440"}/>
-                                <p>Berlin</p>
+                             {/*   <p>Berlin</p>*/}
                             </a>
                         </li>
                     </ul>
