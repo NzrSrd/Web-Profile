@@ -1,0 +1,51 @@
+$bg-color: #313440 ;
+$card-color: #FFD700;
+
+//{'min': '768px', 'max': '991px'}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .profile-card header h1 {
+    line-height: 1;
+    padding: 5% 0 0 7%;
+    font-size: 2.9em;
+  }
+
+  .profile-card header h2 {
+    margin-top: -41px;
+    font-size: 1.17em;
+    font-weight: lighter;
+    padding-left: 7%;
+  }
+
+  .profile-social-links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    background: white;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: 34%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  } li {
+      list-style: none;
+      padding-right: 40px;
+    } a .fa-2x {
+           font-size: 28px;
+            }
+
+  @-webkit-keyframes materia {
+    0% {
+      background: $card-color;
+    }
+    50% {
+      -webkit-border-radius: 4px;
+    }
+    100% {
+      width: 330px;
+      height: 310px;
+      -webkit-border-radius: 2px;
+    }
+  }
+}
