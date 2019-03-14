@@ -13,7 +13,7 @@ class ProfilePage extends Component {
 
                     <ul className="profile-social-links">
                         <li>
-                            <a className="link"
+                            <a className="link" target="_blank"
                                   href="https://github.com/NzrSrd">
                                 <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fab', 'github']}
@@ -21,7 +21,7 @@ class ProfilePage extends Component {
                             </a>
                         </li>
                         <li>
-                            <a className="link"
+                            <a className="link" target="_blank"
                                href="https://www.linkedin.com/in/nizar-sarieldin-4937bb10/">
                                 <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fab', 'linkedin-in']}
@@ -29,7 +29,7 @@ class ProfilePage extends Component {
                             </a>
                         </li>
                         <li>
-                            <a className="link"
+                            <a className="link" target="_blank"
                                href="mailto:nizar.sarieldin@gmail.com">
                                 <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fas', 'at']}
@@ -37,12 +37,11 @@ class ProfilePage extends Component {
                             </a>
                         </li>
                         <li className="location">
-                            <a className="link"
+                            <a className="link" target="_blank"
                                   href="https://goo.gl/maps/Nxr9ncWz8Np">
                                 <FontAwesomeIcon className="icon fa-2x"
                                                  icon={['fas', 'map-marker-alt']}
                                                  color={"#313440"}/>
-                             {/*   <p>Berlin</p>*/}
                             </a>
                         </li>
                     </ul>
